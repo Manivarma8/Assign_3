@@ -1,0 +1,47 @@
+package Task_2;
+
+ class Samsung extends FactoryDemo{
+
+	 static int price = 5000;
+ }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Samsung sam = new Samsung();
+     sam.browse();
+     System.out.println("The price of the mobie is " +  sam.price);
+     sam.call(60);
+     sam.sendMessage();
+     sam.receiveMessage();
+     sam.verifyFingerPrint();
+     sam.providePattern();
+	}
+
+	@Override
+	int call(int sec) {
+		System.out.println("The free call duration is "+ sec + " seconds");
+		return sec;
+	}
+	
+	@Override
+	void sendMessage() {
+		System.out.println("Sending message.............");
+	}
+	
+	@Override
+	void receiveMessage() {
+		System.out.println("A message has been received ............!!");
+	}
+	
+	@Override
+	void verifyFingerPrint() {
+		// TODO Auto-generated method stub
+		System.out.println("This is the process which takes the user fingerprint for security");
+	}
+	
+	@Override
+	void providePattern() {
+		// TODO Auto-generated method stub
+		System.out.println("Another sort of protection which is identify the user by drawing pattern");
+	
+
+}

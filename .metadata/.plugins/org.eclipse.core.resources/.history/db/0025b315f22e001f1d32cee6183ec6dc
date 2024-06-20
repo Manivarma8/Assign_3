@@ -1,0 +1,47 @@
+package Task_3;
+
+public class Tamilnadu extends SouthIndia{
+static String capital = "Chennai";
+Tamilnadu(String primeMinister){
+	super(primeMinister);
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		India Ind = new Tamilnadu("Modiindia");
+		Tamilnadu tamil = new Tamilnadu("Moditamil");
+		SouthIndia si = new Tamilnadu("Modisouth");
+		String India = Ind.capital;
+		String Tamil = tamil.capital;
+	System.out.println("India's Capital is " + India);
+	System.out.println("Tamilnadu's capital is " + Tamil);
+	
+	si.speakLanguage();
+	si.eat();
+	si.dress();
+	si.cultivate();
+	si.livingStyle();
+		
+	}
+@Override 
+void speakLanguage() {
+	System.out.println("In India people speak various languages as for them birth place in "+ capital + " people would speak Tamil");
+}
+
+@Override
+void eat() {
+	System.out.println("People love to have different types of foods in india in "+ capital + "idly dosa are special");
+}
+
+@Override
+void dress() {
+	System.out.println("In " + capital + "People used to wear western culture");
+}
+
+void cultivate() {
+	System.out.println("Rice and sugarcane Cuitivation");
+}
+
+void livingStyle() {
+	System.out.println("Above Average development");
+}
+}

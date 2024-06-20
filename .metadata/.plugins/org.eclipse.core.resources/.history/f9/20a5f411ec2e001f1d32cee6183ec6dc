@@ -1,0 +1,11 @@
+package Task_2;
+
+ class Samsung extends FactoryDemo{
+
+	 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
